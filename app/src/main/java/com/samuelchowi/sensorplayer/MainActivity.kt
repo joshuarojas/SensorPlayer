@@ -12,7 +12,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
-import com.samuelchowi.sensorplayer.player.MainScreen
+import com.samuelchowi.sensorplayer.player.PlayerScreen
 import com.samuelchowi.sensorplayer.player.MainViewModel
 import com.samuelchowi.sensorplayer.ui.theme.OverPlaySensorPlayerTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    MainScreen(viewModel)
+                    PlayerScreen(viewModel)
                 }
             }
         }
